@@ -1,8 +1,12 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { auth } from "../config/firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 
 const ProductDetail = () => {
+
+  const [user] = useAuthState(auth);
   return (
     <div>
     {/* <!-- main contain --> */}
@@ -14,7 +18,7 @@ const ProductDetail = () => {
         <div className="col-2">
           <h2>BMW i8 Limited</h2>
           <h4>IDR 350.000.000</h4>
-          <Link to ="/Cart" className="btncart">Add to Cart</Link>
+          <Link to ={user ? "/Cart" : "/Login"} className="btncart">Add to Cart</Link>
           <h3>Product Details<i className="fa fa-indent"></i></h3>
           <br />
           <p>
