@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import Products from "./Products";
 
@@ -15,7 +16,7 @@ const Home = () => {
                         <p>
                             Banyak diskon menarik sampai akhir tahun 2022.
                         </p>
-                        <a href="#products" className="btn btn-primary">Lihat Product</a>
+                      <Link to="/Products" className="btn btn-primary">Lihat Product</Link>
                     </Col>
                     <Col className="mt-5">
                         <img src="assets/image/mobil.jpg" className="d-block w-100 rounded" height='400px' width='600px' alt="" />
