@@ -86,6 +86,7 @@ code {
 
 .products-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 10px 0px;
   margin-bottom: 40px;
@@ -201,6 +202,7 @@ progress {
   .products-item {
     flex-basis: 60%;
   }
+
 }
 
 @media screen and (max-width:500px) {
@@ -320,7 +322,7 @@ input:focus {
   background: #2b6ec5;
   color: #fff;
   padding: 8px 30px;
-  margin: 30px 0;
+  margin: 10px 0;
   border-radius: 5px;
   transition: background 0.5s;
 }
@@ -394,4 +396,11 @@ td:last-child {
 
 th:last-child {
   text-align: right;
+}
+@media screen and (max-width:1000px) {
+  .product-detail{
+    display: inline-block;
+    margin-right: 25px;
+    text-decoration: none;
+  }
 }
