@@ -4,6 +4,7 @@ import { auth } from "../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useAllProducts } from '../hooks/useAllProducts';
 import { Col, Container, Row } from 'reactstrap';
+import { image } from '../components/Images';
 
 
 const ProductDetail = () => {
@@ -14,14 +15,14 @@ const ProductDetail = () => {
   return (
     <>
     {/* <!-- main contain --> */}
-    <Container className='vh-60'>
+    <Container className='vh-100'>
       <Row style={{
         marginTop: '30px'
       }}>
-        <Col xs='6' className='text-center product-detail'>
-        <img alt="" className='rounded' src={product.image} width='450px'/>
+        <Col xs='12' md='6' className='text-center product-detail'>
+        <img alt="" className='rounded' src={image[product.image]} width='450px' height='450px'/>
         </Col>
-        <Col xs='6'>
+        <Col xs='12' md='6'>
         <h2>{product.name}</h2>
           <h4>{product.price}</h4>
           <Link to ={user ? "/Cart" : "/Login"} className="btncart">Add to Cart</Link>
