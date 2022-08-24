@@ -3,9 +3,9 @@ import { Container } from 'reactstrap';
 
 const Footer = () => {
   return (
-    <div>
+    <div className='footer bg-dark'>
     {/* <!-- footer --> */}
-    <Container className="py-5">
+    <Container className="p-2">
         <div className="footer-content">
             <div className="footer-logo">
               <h1><span>MOBILINDO</span></h1>

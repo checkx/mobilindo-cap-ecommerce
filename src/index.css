@@ -17,6 +17,7 @@ code {
 
 .footer-content {
   display: flex;
+  color: #F1F1F1;
 }
 
 .footer-logo,
@@ -26,8 +27,7 @@ code {
 }
 
 .footer-copyright {
-  font-size: 14px;
-  font-weight: lighter;
+  font-size: 18px;
   text-align: center;
   color: #8f8f8f;
 }
