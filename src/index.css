@@ -174,9 +174,6 @@ progress {
     text-align: center;
   }
 
-  .products-container {
-    flex-direction: column;
-  }
 
   .products-item {
     transition: none;

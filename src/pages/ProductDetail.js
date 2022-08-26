@@ -39,7 +39,7 @@ const ProductDetail = () => {
   return (
     <>
       {/* <!-- main contain --> */}
-      <Container className='vh-100'>
+      <Container className='mb-5'>
         <Row style={{
           marginTop: '30px'
         }}>
