@@ -20,7 +20,7 @@ const Login = () => {
 
   return (
     <>
-    <section className="vh-100" style={{
+    <section className="min-vh-100" style={{
       backgroundColor: "white",
       
       }}>
@@ -59,6 +59,7 @@ const Login = () => {
                   </FormGroup>
                   <div className="form-outline mb-4">
                   <button
+                    type="submit"
                     className="btn btn-primary"
                     onClick={() => logInWithEmailAndPassword(email, password)}
                   >

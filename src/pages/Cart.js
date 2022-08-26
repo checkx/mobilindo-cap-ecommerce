@@ -75,7 +75,7 @@ const Cart = () => {
               <td>Total</td>
               <td>$ {totalPrice}</td>
             </tr>
-            <button className='btncart'>Process Checkout</button>
+            <button className='btncart' >Process Checkout</button>
           </table>
         </div>
       </div>

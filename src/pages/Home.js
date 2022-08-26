@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <>
             {/* Banner */}
-                <Container className="vh-100">
+                <Container className="min-vh-100">
                     <Row>
                     <Col className="m-auto">
                         <h1>TOKO ONLINE PENJUAL MOBIL TERBAIK DI INDONESIA</h1>
