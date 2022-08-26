@@ -328,7 +328,7 @@ input:focus {
   max-width: 1080px;
   padding-left: 25px;
   padding-right: 25px;
-  min-height: 600px;
+  margin: auto;
 
 }
 
