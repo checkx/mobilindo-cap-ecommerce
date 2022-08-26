@@ -338,6 +338,7 @@ input:focus {
 /* Cart Items Details */
 .cart-page {
   margin: 30px auto;
+  
 }
 
 table {
@@ -404,3 +405,6 @@ th:last-child {
     text-decoration: none;
   }
 }
+
+
+

@@ -25,7 +25,7 @@ const Login = () => {
       
       }}>
       <div className="container h-100">
-        <div className="row d-flex justify-content-center align-items-center h-80 mt-5"> 
+        <div className="row d-flex justify-content-center align-items-center h-80 mt-3"> 
         <div className="col col-xl-8">
         <div className="card" style={{
           borderRadius: "1rem",
