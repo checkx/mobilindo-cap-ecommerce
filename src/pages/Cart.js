@@ -17,6 +17,7 @@ const Cart = () => {
   const tax = ((10 / 100) * subTotalPrice);
   const totalPrice = (subTotalPrice + parseFloat(tax));
 
+
   return (
     <div>
       {/* <!-- Cart Items Details --> */}
@@ -34,7 +35,7 @@ const Cart = () => {
                   <img src={image[item.image]} alt="" />
                   <div>
                     <p>{item.name}</p>
-                    <small>{item.price}</small>
+                    <small>$ {item.price}</small>
                     <br />
                     <Link to="/Cart" onClick={() => dispatch(removeProductToCart(item))}>Remove</Link>
                   </div>
@@ -42,6 +43,11 @@ const Cart = () => {
               </td>
               <td><input
                 type="number"
+                style={{
+                  textAlign: 'center',
+                  width: '60px',
+                  marginRight: '10px'
+                }}
                 defaultValue={item.quantity}
                 min={1}
                 onClick={e => dispatch({
@@ -52,9 +58,9 @@ const Cart = () => {
               </td>
               <td>$ {item.price * item.quantity * 1000}</td>
             </tr>
-            ))}
+          ))}
         </table>
-        
+
         <div className="total-price">
           <table>
             <tr>
@@ -69,6 +75,7 @@ const Cart = () => {
               <td>Total</td>
               <td>$ {totalPrice}</td>
             </tr>
+            <button className='btncart'>Process Checkout</button>
           </table>
         </div>
       </div>

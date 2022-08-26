@@ -27,6 +27,7 @@ const reducer = (state = INITIAL_STATE, action) => {
             : content
         )
       };
+      
 
     default:
       return state;

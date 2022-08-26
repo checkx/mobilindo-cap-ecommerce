@@ -321,10 +321,10 @@ input:focus {
   display: inline-block;
   background: #2b6ec5;
   color: #fff;
-  padding: 8px 30px;
+  padding: 8px 15px;
   margin: 10px 0;
   border-radius: 5px;
-  transition: background 0.5s;
+  transition: 0.5s; 
 }
 
 .small-container {
