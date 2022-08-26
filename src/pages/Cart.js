@@ -21,7 +21,7 @@ const Cart = () => {
   return (
     <div>
       {/* <!-- Cart Items Details --> */}
-      <div className="small-container cart-page bg-light vh-100">
+      <div className="small-container mb-5 cart-page bg-light">
         <table>
           <tr>
             <th>Product</th>

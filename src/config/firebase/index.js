@@ -12,6 +12,7 @@ import {
   addDoc,
 } from "firebase/firestore";
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyDZ86Y9BPMpewrMr_ju9s2mnhjYP2dE9gc",
   authDomain: "cap-ecommerce-mobilindo.firebaseapp.com",
