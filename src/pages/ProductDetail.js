@@ -7,7 +7,7 @@ import { Col, Container, Row } from 'reactstrap';
 import { image } from '../components/Images';
 import { useDispatch } from 'react-redux';
 import { addProductToCart } from "../config/redux/action";
-
+import swal from 'sweetalert';
 
 const ProductDetail = () => {
   const { id } = useParams()
@@ -25,13 +25,13 @@ const ProductDetail = () => {
     const { quantity } = detailOrder;
     const data = { id, name, description, image, price, quantity };
     if (!user){
-      alert("Please Login First");
+      swal("You Must Login!", "Please Login First", "warning");
       navigate("/Login");
     } else if (quantity < 1) {
-      alert("Fill Quantity");
+      swal("Failed add to cart!", "Please fill quantity item before add to cart!", "warning");
     } else {
       dispatch(addProductToCart(data));
-      alert('Added to cart');
+      swal("Success", "Success Add to cart", "success");
       navigate("/Cart");
     }
   };
