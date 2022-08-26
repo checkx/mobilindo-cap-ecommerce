@@ -19,7 +19,7 @@ const Products = () => {
                                 <img alt="" src={image[product.image]} />
                                 <div className="products-description">
                                     <h3>{product.name}</h3>
-                                    <h5>{product.price}</h5>
+                                    <h5>$ {product.price}</h5>
                                 </div>
                             </Link>
                         </div>
